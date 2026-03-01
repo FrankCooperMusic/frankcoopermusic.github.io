@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Frank Cooper</title>
-<link href="<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -15,36 +16,38 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #0a0a0a;
+    background: #000;
     color: white;
     text-align: center;
 }
 
 .hero {
-    height: 100vh;
-    background: 
-        linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
-        url('IMG_4312.jpeg') center center / cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding: 80px 20px 40px 20px;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 500;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: white;
 }
+
 .tagline {
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 300;
-    font-size: 1.2rem;
-    opacity: 0.85;
-    letter-spacing: 2px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+
+.hero-image {
+    margin-top: 40px;
+}
+
+.hero-image img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
 }
 
 .stream-buttons {
@@ -59,7 +62,7 @@ body {
     margin: 8px;
     display: inline-block;
     transition: 0.3s ease;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 1px;
 }
 
@@ -69,18 +72,26 @@ body {
 }
 
 .section {
-    padding: 100px 20px;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: auto;
 }
 
 .section h2 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
+.bio p {
+    line-height: 1.8;
+    opacity: 0.85;
+}
+
 iframe {
-    max-width: 90%;
+    width: 100%;
+    max-width: 600px;
     border-radius: 12px;
 }
 
@@ -95,19 +106,18 @@ footer {
     font-size: 0.8rem;
     opacity: 0.5;
 }
-
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
-}
 </style>
 </head>
 
 <body>
 
 <section class="hero">
-    <h1>FRANK COOPER</h1>
+    <h1>Frank Cooper</h1>
     <div class="tagline">Every mile tells a story</div>
+
+    <div class="hero-image">
+        <img src="IMG_4312.jpeg" alt="Frank Cooper">
+    </div>
 
     <div class="stream-buttons">
         <a href="https://music.apple.com/us/artist/frank-cooper/1868493795" target="_blank">Apple Music</a>
@@ -119,20 +129,27 @@ footer {
     </div>
 </section>
 
+<section class="section bio">
+    <h2>About</h2>
+    <p>
+        Frank Cooper crafts songs rooted in heart, distance, and the roads that lead us home.
+        Blending honest storytelling with cinematic undertones, his music captures the miles
+        between love, loss, and everything in between.
+    </p>
+</section>
+
 <section class="section">
     <h2>Featured Release</h2>
-    <iframe style="border-radius:12px"
-        src="https://open.spotify.com/embed/artist/6MZDTx942IorIJjioFpvij?utm_source=generator"
-        width="100%" height="352"
-        frameBorder="0"
-        allowfullscreen=""
+    <iframe 
+        src="https://open.spotify.com/embed/artist/6MZDTx942IorIJjioFpvij"
+        height="352"
+        frameborder="0"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
     </iframe>
 </section>
 
 <section class="section contact">
     <h2>Contact</h2>
-    <p>Email</p>
     <p><a href="mailto:FrankCooperMusic@gmail.com">FrankCooperMusic@gmail.com</a></p>
 </section>
 
