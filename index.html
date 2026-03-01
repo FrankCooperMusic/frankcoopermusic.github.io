@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Frank Cooper</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+
 <style>
 * {
     margin: 0;
@@ -14,32 +15,40 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #0d0d0d;
+    background: #0a0a0a;
     color: white;
     text-align: center;
 }
 
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)), url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
+    background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.95)),
+                url('IMG_3386.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeIn 1.5s ease-in;
 }
 
 .hero h1 {
     font-size: 4rem;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8);
 }
 
 .tagline {
     margin-top: 20px;
     font-weight: 300;
     font-size: 1.2rem;
-    opacity: 0.8;
+    opacity: 0.85;
+    letter-spacing: 2px;
 }
 
 .stream-buttons {
@@ -50,10 +59,12 @@ body {
     text-decoration: none;
     color: white;
     border: 1px solid white;
-    padding: 12px 20px;
+    padding: 12px 22px;
     margin: 8px;
     display: inline-block;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
 .stream-buttons a:hover {
@@ -62,17 +73,19 @@ body {
 }
 
 .section {
-    padding: 80px 20px;
+    padding: 100px 20px;
 }
 
 .section h2 {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 iframe {
     max-width: 90%;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 .contact a {
@@ -82,9 +95,14 @@ iframe {
 }
 
 footer {
-    padding: 30px;
+    padding: 40px;
     font-size: 0.8rem;
     opacity: 0.5;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
 }
 </style>
 </head>
@@ -93,7 +111,8 @@ footer {
 
 <section class="hero">
     <h1>FRANK COOPER</h1>
-    <div class="tagline">If love had a map, I'd follow it home.</div>
+    <div class="tagline">Every mile tells a story.</div>
+
     <div class="stream-buttons">
         <a href="https://music.apple.com/us/artist/frank-cooper/1868493795" target="_blank">Apple Music</a>
         <a href="https://open.spotify.com/artist/6MZDTx942IorIJjioFpvij" target="_blank">Spotify</a>
@@ -105,8 +124,14 @@ footer {
 </section>
 
 <section class="section">
-    <h2>Watch</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=user_uploads&list=frankcoopermusic" frameborder="0" allowfullscreen></iframe>
+    <h2>Featured Release</h2>
+    <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/artist/6MZDTx942IorIJjioFpvij?utm_source=generator"
+        width="100%" height="352"
+        frameBorder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
 </section>
 
 <section class="section contact">
