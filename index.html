@@ -21,19 +21,20 @@ body {
     text-align: center;
 }
 
+/* HERO */
 .hero {
-    padding: 50px 20px 20px 20px;
+    padding: 60px 20px 20px;
 }
 
 .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
 .tagline {
-    margin-top: 8px;
+    margin-top: 10px;
     font-weight: 300;
     font-size: 0.95rem;
     opacity: 0.75;
@@ -49,6 +50,7 @@ body {
     border-radius: 10px;
 }
 
+/* BUTTONS */
 .stream-buttons {
     margin-top: 25px;
 }
@@ -58,7 +60,7 @@ body {
     color: white;
     border: 1px solid white;
     padding: 10px 16px;
-    margin: 5px;
+    margin: 6px;
     display: inline-block;
     transition: 0.3s ease;
     font-size: 0.75rem;
@@ -70,6 +72,7 @@ body {
     color: black;
 }
 
+/* SECTIONS */
 .section {
     padding: 60px 20px;
     max-width: 750px;
@@ -85,23 +88,27 @@ body {
 }
 
 .bio p {
-    line-height: 1.6;
+    line-height: 1.7;
     opacity: 0.85;
     font-size: 0.95rem;
 }
 
+/* SPOTIFY */
 iframe {
     width: 100%;
-    max-width: 500px;
+    max-width: 520px;
     border-radius: 12px;
+    height: 352px;
 }
 
+/* CONTACT */
 .contact a {
     color: white;
     text-decoration: none;
     border-bottom: 1px solid white;
 }
 
+/* FOOTER */
 footer {
     padding: 30px;
     font-size: 0.75rem;
@@ -112,23 +119,31 @@ footer {
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
     <h1>Frank Cooper</h1>
     <div class="tagline">Every mile tells a story</div>
-</div>
-    
+
     <div class="tagline">New Single "Nashville Hot" out now!</div>
+
     <div class="hero-image">
         <img src="image0.png" alt="Frank Cooper">
-</div>
+    </div>
+
     <div class="stream-buttons">
-        <a href="https://distrokid.com/hyperfollow/frankcooper1/nashville-hot?ref=release" target="_blank">New Release - Nashville Hot</a>
-</div>
+        <a href="https://distrokid.com/hyperfollow/frankcooper1/nashville-hot?ref=release" target="_blank">
+            Listen to Nashville Hot
+        </a>
+    </div>
 </section>
-    
-       <div class="tagline">Album "Fifteen Minutes Down The Road"</div>
+
+<!-- ALBUM SECTION -->
+<section class="hero">
+    <div class="tagline">Album</div>
+    <h1 style="font-size:1.4rem;">Fifteen Minutes Down The Road</h1>
+
     <div class="hero-image">
-        <img src="IMG_4313.jpeg" alt="Frank Cooper">
+        <img src="IMG_4313.jpeg" alt="Album Cover">
     </div>
 
     <div class="stream-buttons">
@@ -141,6 +156,7 @@ footer {
     </div>
 </section>
 
+<!-- ABOUT -->
 <section class="section bio">
     <h2>About</h2>
     <p>
@@ -150,16 +166,18 @@ footer {
     </p>
 </section>
 
+<!-- SPOTIFY -->
 <section class="section">
-    <h2>Featured Release</h2>
-    <iframe 
-        src="https://open.spotify.com/embed/artist/6MZDTx942IorIJjioFpvij"
-        height="352"
-        frameborder="0"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    <h2>Featured Track</h2>
+
+    <iframe
+        src="https://open.spotify.com/embed/track/1BGnaMZLbbsZ6mIeDOS2wf?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
     </iframe>
 </section>
 
+<!-- CONTACT -->
 <section class="section contact">
     <h2>Contact</h2>
     <p><a href="mailto:FrankCooperMusic@gmail.com">FrankCooperMusic@gmail.com</a></p>
